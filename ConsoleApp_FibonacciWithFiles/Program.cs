@@ -72,7 +72,15 @@ namespace ConsoleApp_FibonacciWithFiles
                     }
                 }
             }
-            catch (FileNotFoundException) 
+            catch (FileNotFoundException)
+            {
+                Console.WriteLine("Неправильный путь к файлу");
+            }
+            catch (ArgumentException)
+            {
+                Console.WriteLine("Неправильный путь к файлу");
+            }
+            catch (UnauthorizedAccessException) 
             {
                 Console.WriteLine("Неправильный путь к файлу");
             }
